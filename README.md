@@ -29,6 +29,9 @@ var resources = requireChildren('./resources', module);
 # Usage
 
 `requireChildren(directory, destinationModule, options);`
+
+`requireChildren` always returns an object.
+
 ## params
 + <String> `directory`: The directory to require children of.
 + <NodeJS Module> `destinationModule`: The module that is requiring the directory children.
