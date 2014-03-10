@@ -28,13 +28,12 @@ var resources = requireChildren('./resources', module);
 
 # Usage
 
-`requireChildren(directory, destinationModule, options);`
+`requireChildren(directory, destinationModule);`
 
-`requireChildren` always returns an object.
+`requireChildren` always returns a `children` object. The keys of the `children` object are the names of the modules 
+that were successfully loaded from `directory` without their extensions or any spaces.
 
 ## params
 + <String> `directory`: The directory to require children of.
 + <NodeJS Module> `destinationModule`: The module that is requiring the directory children.
-+ <Object> `options`
-  + <String> `casing`: The casing of the returned object's keys. Can be `lowercase`, `uppercase` or `capitalized`.
 
